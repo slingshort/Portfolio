@@ -1,0 +1,110 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+/* establishing color theme using variables */
+:root {
+    --accent-color: #863414;
+    --shading-color: #DBC6B4;
+    --item-color: #ce8264;
+}
+
+/* targets all h2 elements, gives aestehtic cohesion to page */
+h2 {
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+
+/* adds padding to all paragraph text */
+p {
+    padding:10px;
+}
+
+/* targets body section */
+body {
+    background-color: var(--shading-color);
+}
+
+/* targets nav bar */
+nav {
+    display: flex;
+    background-color:var(--accent-color);
+    justify-content:flex-end;
+}
+
+/* formats nav bar to look more intuitive */
+nav a {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* when hover on nav bar elements, the following qualities apply */
+nav a:hover {
+    background-color:var(--item-color);
+    color:black;
+}
+
+/* Adds a margin of 10px to all list item */
+li {
+    margin: 10px;
+}
+
+/* removes underline from asset tag links */
+a {
+    text-decoration-color: black;
+    text-emphasis-color: white;
+    text-decoration: none;
+}
+
+/* creates a hero image which is linked in the stylesheet */
+.hero-image {
+    background-image: url(../images/Marimba_profile.jpg);
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size:cover;
+    background-position: center;
+}
+
+/* targets hero text */
+.hero-text {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    color:white;
+    font-size: 40px;
+    padding-right: 20px;
+
+}
+ /* creates a class to allow ease of repeating the same formatting styles */
+.margin-right {
+    margin-right:20%;
+    margin-left:20px;
+}
+
+.work {
+    flex: 4;
+    padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work img {
+    max-width: 100%;
+}
+
+.card {
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--accent-color);
+    padding: 4px;
+    margin: 5px;
+    max-width: 30%;
+}
