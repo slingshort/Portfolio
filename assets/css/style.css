@@ -16,11 +16,13 @@ h2 {
     display: flex;
     justify-content: flex-start;
     margin-left: 30px;
+    color:white
 }
 
 /* adds padding to all paragraph text */
 p {
     padding:10px;
+    color:#232020
 }
 
 /* targets body section */
@@ -88,23 +90,112 @@ a {
     margin-left:20px;
 }
 
+/* Each of the ID tags are used only to target background color */
+#about {
+    background-color: var(--item-color);
+}
+
+#media {
+    background-color: var(--item-color);
+}
+
+#work {
+    background-color: var(--item-color);
+}
+
+/* This section allows more intuitive organisation of image cards */
 .work {
-    flex: 4;
-    padding: 20px;
+    flex: 5;
+    padding: 10px;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .work img {
     max-width: 100%;
+   
+}
+
+.work footer {
+    font-size: 25px;
+    justify-content: center;
+    padding:10px;
+    color: white;
+}
+
+.card1 {
+    border-style:solid;
+    border-width: 6px;
+    border-color: var(--accent-color);
+    margin: 20px;
+    max-width: 96%;
+    text-align: center;
+    background: var(--accent-color);
+}
+
+.card1 img {
+    opacity: .78;
+}
+
+/* this makes the website more dynamic by changing the aesthetic quality of elements the cursor is hovering over the element */
+.card1:hover {
+    border-color:black;
+    background-color: black;
+    box-shadow: 10px 10px 10px 10px #5610109f;
+    cursor: grab;
+}
+
+/* element is highlighted as the opacity of the image is 100% on over */
+.card1:hover img {
+    opacity: 1;
+    transition: 0.5s ease;
 }
 
 .card {
     border-style: solid;
-    border-width: 4px;
+    border-width: 6px;
     border-color: var(--accent-color);
-    padding: 4px;
-    margin: 5px;
-    max-width: 30%;
+    margin: 20px;
+    max-width: 46%;
+    text-align: center;
+    background: var(--accent-color);
+}
+
+.card img {
+    opacity: .78;
+}
+
+
+.card:hover {
+    border-color:black;
+    background-color: black;
+    box-shadow: 10px 10px 10px 10px #5610109f;
+    cursor: grab;
+}
+
+.card:hover img {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+/* targeting the contact id to change bakground color */
+#contact {
+    background-color: var(--item-color);
+}
+
+#contact li {
+    list-style:disc;
+    margin-left: 25px;
+}
+
+/* removes default color of links */
+#contact a {
+    text-decoration: none;
+    color:black
+}
+
+/* causes the text color of the links to turn white on hover */
+#contact a:hover{
+    color:white
 }
